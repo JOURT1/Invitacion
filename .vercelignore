@@ -1,0 +1,7 @@
+# Bocetos locales: no se deben publicar ni servir.
+envelope-butterfly-reveal.mp4
+opening-start-keyframe.png
+opening-end-keyframe.png
+princess-bg.png
+.env*
+.vercel/

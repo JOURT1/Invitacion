@@ -3,3 +3,5 @@ envelope-butterfly-reveal.mp4
 opening-start-keyframe.png
 opening-end-keyframe.png
 princess-bg.png
+.vercel/
+.env*
