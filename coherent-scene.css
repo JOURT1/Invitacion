@@ -37,6 +37,7 @@
 .scene .page-essentials .eyebrow{margin-bottom:5%}
 .scene .page-essentials .page-copy{margin-top:5%}
 .scene .page-essentials .packing-list{margin-top:7%}
+.scene .page-essentials .packing-list span:last-child{grid-column:1/-1;justify-self:center;width:62%;text-align:center}
 .scene .page-goodbye{padding:7% 5% 4%}
 .scene .page-goodbye:before,.scene .ornate-frame:before,.scene .ornate-frame:after,.scene .frame-flower{display:none}
 .scene .ornate-frame{width:100%;height:auto;border:0;outline:0;padding:0;display:flex;align-items:center;justify-content:center}
