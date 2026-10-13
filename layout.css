@@ -1,0 +1,4 @@
+/* Keeps the invite at a mobile proportion without drawing a device frame. */
+.invitation{width:min(100vw,46.1538vh)}
+.date-year{font:10px Montserrat,sans-serif;letter-spacing:.28em;color:#9b8581;margin:10px 0 0}
+@media(min-aspect-ratio:9/19.5){.invitation{width:min(100vw,46.1538vh);height:100svh}}

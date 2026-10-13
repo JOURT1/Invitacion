@@ -1,0 +1,36 @@
+:root{--paper:#fff;--gold:#b99858;--ink:#9c804a}
+html,body,.stage,.invitation,.pages{background:#fff!important}
+body{color:#927849}
+.stage{background:#fff!important}
+.invitation{box-shadow:none}
+.page,.page-goodbye{background:#fff!important;color:#9b804e}
+.page:before{border-color:#c6aa6e80}
+.page h1,.page h2,.dates b,.departure strong{color:#a4864e}
+.page h1 em,.page h2 em,.signature{color:#b1945e}
+.eyebrow,.page-copy,.departure,.dates,.dates i,.packing-list span{color:#9c8559}
+.fine-rule{color:#b99a5e}
+.fine-rule:before,.fine-rule:after,.packing-list span{border-color:#c5aa7070}
+.dates b{color:#ad9055}
+.ampersand,.packing-list i,.flourish{color:#b79a61}
+.page-goodbye{padding:8%}
+.page-goodbye:before{display:block}
+.ornate-frame{border-color:#b99a61;outline-color:#c5ac7c}
+.ornate-frame:before,.ornate-frame:after,.frame-flower{color:#b99a61}
+.ornate-frame .eyebrow,.ornate-frame h2,.ornate-frame h2 em,.ornate-frame .page-copy,.signature{color:#a4864e}
+.navigation{color:#a4864e}
+.nav-arrow{background:#fff;color:#a4864e;border:1px solid #c5aa70}
+.nav-arrow:hover{background:#faf7ef}
+.progress,.progress span{color:#a4864e;text-shadow:none}
+.progress i{background:#c4a66a}
+.replay{background:#fff;color:#9c804a;border:1px solid #c5aa70}
+.intro-video{position:absolute;z-index:4;inset:0;width:100%;height:100%;object-fit:cover;background:#fff;opacity:0;visibility:hidden;pointer-events:none}
+.cover.video-playing{animation:none!important;transform:none!important;filter:none!important;opacity:1!important}
+.cover.video-playing:after{display:none}
+.cover.video-playing .intro-video{opacity:1;visibility:visible}
+.cover.video-playing .cover-prompt,.cover.video-playing .cover-hint,.cover.video-playing .reveal-card{opacity:0;visibility:hidden;animation:none}
+.invitation.video-playing .flight-butterfly{visibility:hidden}
+.flight-butterfly img{filter:sepia(1) saturate(3) hue-rotate(2deg) brightness(.88) contrast(1.12) drop-shadow(0 5px 5px #9a783a50)}
+.invitation.landed .flight-butterfly{top:14%}
+.invitation.landed .page>.butterfly{visibility:hidden}
+.invitation.landed .flight-butterfly img{animation:butterfly-wingbeat .55s ease-in-out infinite alternate}
+@media(prefers-reduced-motion:reduce){.invitation.landed .flight-butterfly img{animation:none}}

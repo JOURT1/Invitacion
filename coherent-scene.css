@@ -1,0 +1,57 @@
+/* One 9:16 scene is shared by the generated opening and every live card. */
+.invitation{isolation:isolate}
+.scene{position:absolute;top:0;bottom:0;left:50%;width:max(100%,56.25svh);transform:translateX(-50%);overflow:hidden}
+.scene .cover,.scene .pages{position:absolute;inset:0;width:100%;height:100%}
+.scene .cover{background:#48171b url("burgundy-envelope.png") center/cover no-repeat}
+.scene .pages{background:#f1ece4 url("opened-envelope-blank.png") center/100% 100% no-repeat!important}
+.scene .page{inset:auto;left:15.25%;top:26.72%;width:69.55%;height:55.15%;padding:8% 4.5% 5%;background:transparent!important;transform:translateY(9px);justify-content:center;gap:0;color:#92754b}
+.scene .page.active{transform:none}
+.scene .page:before{display:none}
+.scene .page>.butterfly{display:none}
+.scene .page .eyebrow{font:500 clamp(8px,1.05svh,15px)/1.25 Montserrat,sans-serif;letter-spacing:.19em;text-transform:uppercase;color:#9b805a;margin:0 0 7%}
+.scene .page h1,.scene .page h2{font-family:"Pinyon Script","Great Vibes",cursive;font-weight:400;font-size:clamp(38px,6.1svh,78px);line-height:.84;letter-spacing:0;color:#aa8754;margin:0}
+.scene .page h1 em,.scene .page h2 em{display:block;font:inherit;color:inherit;margin-top:.18em}
+.scene .page h1 .title-join{display:block;font:400 clamp(14px,2.4svh,30px)/1.1 "Cormorant Garamond",serif;margin:.1em 0}
+.scene .page .fine-rule{width:54%;margin:7% auto 0;color:#b69863}
+.scene .page .fine-rule:before,.scene .page .fine-rule:after{background:#bd9b6880}
+.scene .page .page-copy{font:400 clamp(14px,2.1svh,25px)/1.12 "Cormorant Garamond",serif;color:#937d5e;margin:6% auto 0;max-width:100%}
+.scene .page-welcome{padding-top:11%}
+.scene .page-welcome h1{font-size:clamp(31px,5svh,64px)}
+.scene .page-welcome .eyebrow{margin-bottom:9%}
+.invitation-subtitle{font:500 clamp(8px,1.13svh,16px)/1.5 Montserrat,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#9e855f;margin:10% 0 0}
+.welcome-date{font:500 clamp(9px,1.25svh,16px) "Cormorant Garamond",serif;letter-spacing:.18em;color:#9e855f;margin:11% 0 0}
+.scene .page-love h2{font-size:clamp(39px,5.7svh,72px)}
+.scene .page-date .save-date{font-size:clamp(43px,6.7svh,85px)!important;line-height:.78!important}
+.scene .dates{margin-top:8%;gap:clamp(9px,2.2svh,25px)}
+.scene .dates b{font-size:clamp(43px,7svh,85px)}
+.scene .dates span,.scene .dates i{font-size:clamp(7px,.9svh,12px);color:#9d835d}
+.scene .date-year{margin:6% 0 0;color:#a28963}
+.scene .departure{font-size:clamp(10px,1.28svh,16px);color:#967b55;margin:7% 0 0}
+.scene .departure strong{margin-top:4px;color:#aa8754}
+.scene .page-pack h2{font-size:clamp(44px,6.8svh,85px)}
+.scene .page-pack .page-copy{margin-top:5%}
+.scene .packing-list{gap:0 8px;margin:7% 0 0}
+.scene .packing-list span{font-size:clamp(8px,1.14svh,15px);padding:8px 0;color:#9b805b}
+.scene .packing-list i{font-size:clamp(11px,1.5svh,20px);margin-right:3px}
+.scene .page-essentials h2{font-size:clamp(42px,6svh,76px)}
+.scene .page-essentials .eyebrow{margin-bottom:5%}
+.scene .page-essentials .page-copy{margin-top:5%}
+.scene .page-essentials .packing-list{margin-top:7%}
+.scene .page-goodbye{padding:7% 5% 4%}
+.scene .page-goodbye:before,.scene .ornate-frame:before,.scene .ornate-frame:after,.scene .frame-flower{display:none}
+.scene .ornate-frame{width:100%;height:auto;border:0;outline:0;padding:0;display:flex;align-items:center;justify-content:center}
+.scene .ornate-frame .eyebrow{margin:0 0 9%;color:#9b805a}
+.scene .ornate-frame h2{font-size:clamp(47px,6.5svh,82px);color:#aa8754}
+.scene .ornate-frame h2 em{color:#aa8754}
+.scene .ornate-frame .page-copy{margin-top:8%;color:#937d5e}
+.scene .signature{font:400 clamp(24px,3.7svh,44px) "Pinyon Script",cursive;color:#aa8754;margin:14% 0 0}
+.scene .flight-butterfly{width:47.5%;height:auto;left:50%;top:17%}
+.invitation.landed .flight-butterfly{left:50%;top:17%;width:47.5%;transform:translate(-50%,0) scale(1)}
+.scene .flight-butterfly img{filter:drop-shadow(0 7px 8px #55402655)}
+.cover.video-playing{transition:opacity .6s ease!important}
+.cover.video-playing.video-ending{opacity:0!important;pointer-events:none}
+.navigation{bottom:max(2.2%,env(safe-area-inset-bottom));gap:clamp(13px,3svh,35px)}
+.progress{background:#fffdf6df;padding:7px 10px;border-radius:99px}
+.nav-arrow{background:#fffdf6e8;color:#8f6d42}
+.replay{background:#fffdf6e8}
+@media(max-height:650px){.scene .page{padding-top:6%}.scene .page-welcome{padding-top:10%}.scene .page .eyebrow{margin-bottom:5%}.scene .page .page-copy{margin-top:4%}}

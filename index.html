@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Una sorpresa para mi princesa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Pinyon+Script&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="layout.css" />
+  <link rel="stylesheet" href="motion.css" />
+  <link rel="stylesheet" href="gold-theme.css" />
+  <link rel="stylesheet" href="coherent-scene.css" />
+</head>
+<body>
+  <main class="stage">
+    <section class="invitation" id="invitation" aria-label="Invitación sorpresa">
+      <div class="scene" id="scene">
+      <div class="cover active" id="cover" role="button" tabindex="0" aria-label="Toca para abrir la invitación">
+        <video class="intro-video" id="introVideo" playsinline muted preload="auto" aria-hidden="true">
+          <source src="envelope-opening-coherent.mp4" type="video/mp4" />
+        </video>
+        <div class="reveal-card" aria-hidden="true"></div>
+        <span class="cover-prompt">Toca para abrir</span>
+        <span class="cover-hint">Una sorpresa para mi princesa</span>
+      </div>
+      <div class="flight-butterfly" id="flightButterfly" aria-hidden="true"><img src="butterfly.png" alt="" /></div>
+
+      <div class="pages" id="pages" aria-live="polite">
+        <article class="page page-welcome">
+          <img class="butterfly" src="butterfly.png" alt="" />
+          <p class="eyebrow">Una invitación solo para ti</p>
+          <h1>Mi princesa<span class="title-join">&amp;</span><em>amor de mi vida</em></h1>
+          <p class="invitation-subtitle">Estás cordialmente invitada</p>
+          <div class="fine-rule"><span>❦</span></div>
+          <p class="page-copy">A vivir conmigo una sorpresa<br>que preparé con todo mi amor.</p>
+          <p class="welcome-date">7 &amp; 8 · NOVIEMBRE · 2026</p>
+        </article>
+
+        <article class="page page-love">
+          <img class="butterfly" src="butterfly.png" alt="" />
+          <p class="eyebrow">Con todo mi amor</p>
+          <h2>Una escapada<br><em>solo para nosotros</em></h2>
+          <div class="fine-rule"><span>♡</span></div>
+          <p class="page-copy">Quiero regalarte un recuerdo bonito,<br>de esos que se quedan para siempre.</p>
+        </article>
+
+        <article class="page page-date">
+          <img class="butterfly" src="butterfly.png" alt="" />
+          <p class="eyebrow">Reserva estos días</p>
+          <h2 class="save-date">Save<br><em>the date</em></h2>
+          <div class="dates">
+            <div><span>SÁBADO</span><b>07</b><i>NOVIEMBRE</i></div>
+            <span class="ampersand">&amp;</span>
+            <div><span>DOMINGO</span><b>08</b><i>NOVIEMBRE</i></div>
+          </div>
+          <p class="date-year">2026</p>
+          <p class="departure">Salimos el sábado a las <strong>7:00 a. m.</strong></p>
+        </article>
+
+        <article class="page page-pack">
+          <img class="butterfly" src="butterfly.png" alt="" />
+          <p class="eyebrow">El destino es secreto</p>
+          <h2>Prepara tu<br><em>maleta</em></h2>
+          <p class="page-copy">Lleva cositas para el frío<br>y también para el calor.</p>
+          <div class="packing-list">
+            <span><i>❄</i> Algo abrigado</span>
+            <span><i>☼</i> Ropa fresca</span>
+            <span><i>♨</i> Traje de baño</span>
+            <span><i>✧</i> Repelente</span>
+          </div>
+        </article>
+
+        <article class="page page-essentials">
+          <p class="eyebrow">Para ir tranquila</p>
+          <h2>Unos detalles<br><em>más</em></h2>
+          <p class="page-copy">Una noche fuera de casa.<br>Deja tu maleta lista desde el viernes.</p>
+          <div class="packing-list">
+            <span><i>✧</i> Calzado cómodo</span>
+            <span><i>☼</i> Protector solar</span>
+            <span><i>✦</i> Documento</span>
+            <span><i>✧</i> Cargador</span>
+            <span><i>☾</i> Pijama y aseo</span>
+            <span><i>♡</i> Medicinas (si usas)</span>
+          </div>
+        </article>
+
+        <article class="page page-goodbye">
+          <div class="ornate-frame">
+            <div class="frame-flower top">❦</div>
+            <p class="eyebrow">Con todo mi amor</p>
+            <h2>Para ti,<br><em>mi princesa</em></h2>
+            <div class="fine-rule"><span>♡</span></div>
+            <p class="page-copy">Prepárate para vivir<br>algo inolvidable.</p>
+            <p class="signature">Quien quiere vivirlo todo contigo</p>
+            <div class="frame-flower bottom">❦</div>
+          </div>
+        </article>
+      </div>
+      </div>
+
+      <nav class="navigation" id="navigation" aria-label="Páginas de la invitación" hidden>
+        <button class="nav-arrow" id="previous" aria-label="Página anterior">‹</button>
+        <div class="progress"><span id="currentPage">01</span><i></i><span id="totalPages">07</span></div>
+        <button class="nav-arrow" id="next" aria-label="Siguiente página">›</button>
+      </nav>
+      <button class="replay" id="replay" hidden>Volver a empezar</button>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
